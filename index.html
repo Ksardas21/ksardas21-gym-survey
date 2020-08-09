@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <title>Champions Academy Gym</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">
+             Champions Academy Gym's Survey
+        </h1>
+        <p id="description">
+             Thank you for taking the time to help us improve our gym
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label><br>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label><br>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Age</label><br>
+            <input
+            type="number"
+            id="number"
+            class="form-control"
+            placeholder="Enter your age"
+            min="12"
+            max="70"
+            required
+        />
+        </div>
+        <div class="form-select">
+            <p id=selable>On average, how often do you go to the gym?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select the frequency</option>
+                <option value="once">Once a week</option>
+                <option value="twice">Twice a week</option>
+                <option value="three">Three times a week</option>
+                <option value="four">Four times a week</option>
+                <option value="five">Five times a week</option>
+                <option value="everyday">Everyday</option>
+            </select>
+        </div>
+        <div class="form-radio">
+            <p>What’s your weight ?</p>
+            <label>
+                <input
+                type="radio"
+                name="weight"
+                value="low"
+                checked
+                required
+                >30-60kg
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="weight"
+                value="medium"
+                >61-90kg
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="weight"
+                value="large"
+                >91-120kg
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="weight"
+                value="verylarge"
+                >121-160kg
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="weight"
+                value="xx-large"
+                >161+kg
+            </label>
+        </div>
+        <div class="form-radio">
+            <p>How many hours do you sleep on average ? </p>
+            <label>
+                <input
+                type="radio"
+                name="sleep"
+                value="lowzz"
+                checked
+                required
+                >Less than 5 hours
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="sleep"
+                value="mediumzz"
+                >5-7 hours
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="sleep"
+                value="largezz"
+                >8-10 hours
+            </label><br>
+            <label>
+                <input
+                type="radio"
+                name="sleep"
+                value="verylargezz"
+                >10+ Hours
+            </label><br>
+            <div class="form-radio">
+                <p>On average how many hours do you spend working out ? </p>
+                <label>
+                    <input
+                    type="radio"
+                    name="workout"
+                    value="lowwo"
+                    checked
+                    required
+                    >Less than a hour
+                </label><br>
+                <label>
+                    <input
+                    type="radio"
+                    name="workout"
+                    value="mediumwo"
+                    >1-2 hours
+                </label><br>
+                <label>
+                    <input
+                    type="radio"
+                    name="workout"
+                    value="largewo"
+                    >2-3 hours
+                </label><br>
+                <label>
+                    <input
+                    type="radio"
+                    name="workout"
+                    value="verylargewo"
+                    >3+ Hours
+                </label><br>
+                <div class="form-radio">
+                    <p>Which activity do you prefer ?</p>
+                    <label>
+                        <input
+                        type="radio"
+                        name="activity"
+                        value="mma"
+                        checked
+                        required
+                        >Mma
+                    </label><br>
+                    <label>
+                        <input
+                        type="radio"
+                        name="activity"
+                        value="crossfit"
+                        >Crossift
+                    </label><br>
+                    <label>
+                        <input
+                        type="radio"
+                        name="activity"
+                        value="yoga"
+                        >Yoga
+                    </label><br>
+                    <label>
+                        <input
+                        type="radio"
+                        name="activity"
+                        value="wl"
+                        >Weight lifting
+                    </label><br>
+                    <div class="form-radio">
+                        <p>How long have you been A member of our gym ?</p>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="lowtime"
+                            checked
+                            required
+                            >1-3 months
+                        </label><br>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="mediumtime"
+                            >3-6 months
+                        </label><br>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="largetime"
+                            >6-9 month
+                        </label><br>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="verylargetime"
+                            >9-12 month
+                        </label><br>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="xx-largetime"
+                            >12+ month
+                        </label>
+                    </div>
+                    <div class="form-radio">
+                        <p>Have you had any injures /accidents ? </p>
+                        <label>
+                            <input
+                            type="radio"
+                            name="time"
+                            value="no"
+                            checked
+                            required
+                            >No
+                        </label><br>
+                        <label>
+                            <input
+                            type="radio"
+                            name="injuries"
+                            value="yes"
+                            >Yes
+                        </label><br>
+                        </div>
+                        <div class="form-radio">
+                            <p>Do you pay for our trainer program? (If no, ignore next question)</p>
+                            <label>
+                                <input
+                                type="radio"
+                                name="trainer"
+                                value="notrainer"
+                                checked
+                                required
+                                >No
+                            </label><br>
+                            <label>
+                                <input
+                                type="radio"
+                                name="trainer"
+                                value="yestrainer"
+                                >Yes
+                            </label><br>
+                            </div>
+                            <div class="form-radio-rate">
+                                <p>Rate our trainers effectiveness</p>
+                                <span>1</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="trainrate"
+                                    value="notsatisfied"
+                                    checked
+                                    >
+                                </label>
+                                <span>2</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="trainrate"
+                                    value="quitenotsatisfied"
+                                    >
+                                </label>
+                                <span>3</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="trainrate"
+                                    value="satisfied"
+                                    >
+                                </label>
+                                <span>4</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="trainrate"
+                                    value="quitesatisfied"
+                                    >
+                                </label>
+                                <span>5</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="trainrate"
+                                    value="Verysatisfied"
+                                    >
+                                </label>
+                            </div>
+                            <div class="form-radio-rate">
+                                <p>Rate our location </p>
+                                <span>1</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="location"
+                                    value="notsatisfied"
+                                    checked
+                                    required
+                                    >
+                                </label>
+                                <span>2</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="location"
+                                    value="quitenotsatisfied"
+                                    >
+                                </label>
+                                <span>3</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="location"
+                                    value="satisfied"
+                                    >
+                                </label>
+                                <span>4</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="location"
+                                    value="quitesatisfied"
+                                    >
+                                </label>
+                                <span>5</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="location"
+                                    value="Verysatisfied"
+                                    >
+                                </label>
+                            </div>
+                            <div class="form-radio-rate">
+                                <p>Rate the customers service of our gym </p>
+                                <span>1</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="service"
+                                    value="notsatisfied"
+                                    checked
+                                    required
+                                    >
+                                </label>
+                                <span>2</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="service"
+                                    value="quitenotsatisfied"
+                                    >
+                                </label>
+                                <span>3</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="service"
+                                    value="satisfied"
+                                    >
+                                </label>
+                                <span>4</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="service"
+                                    value="quitesatisfied"
+                                    >
+                                </label>
+                                <span>5</span>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="service"
+                                    value="Verysatisfied"
+                                    >
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <p>What is your main reason for joining our gym ? </p>
+                                <textarea
+                                  id="comments"
+                                  class="input-textarea"
+                                  name="comment"
+                                  placeholder="Enter your answer here..."
+                                ></textarea>
+                              </div>
+                              <div class="form-group">
+                                <p>Can you provide any suggestions for improvement ?  </p>
+                                <textarea
+                                  id="comments"
+                                  class="input-textarea"
+                                  name="comment"
+                                  placeholder="Enter your answer here..."
+                                ></textarea>
+                                <div class="form-checkbox">
+                        <p>Would you like to be informed about our other new surveys? (if no, ignore it) </p>
+                        <label>
+                            <input
+                            type="checkbox"
+                            name="adds"
+                            value="getinfo"
+                            
+                            >Yes, I'd like to get Email massage about new surveys
+                        </label><br>
+                        <label>
+                            <input
+                            type="checkbox"
+                            name="adds"
+                            value="agreement"
+                            required
+                            >I agree to Tearms and Policies
+                        </label><br>
+                        </div>
+                              </div>
+                              <div class="form-submit">
+                                <button type="submit" id="submit" class="submit-button">
+                                  Submit
+                                </button>
+                              </div>
+                  
+            </form>
+</body>
+</html>
